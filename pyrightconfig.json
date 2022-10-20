@@ -1,6 +1,7 @@
 {
     "exclude": [
-        "scripts/*",
+        ".venv/*",
+
     ]
 
 }
