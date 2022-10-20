@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -158,24 +159,4 @@ cython_debug/
 *.png
 *.jpg
 
-modeling_and_accuracy_analysis/data/
-modeling_and_accuracy_analysis/modeling_and_accuracy_analysis/_archive/
-modeling_and_accuracy_analysis/modeling_and_accuracy_analysis/data.csv
-modeling_and_accuracy_analysis/tests/
-modeling_and_accuracy_analysis/notebooks/data.csv
-
-modeling_and_accuracy_analysis/from_mark
-modeling_and_accuracy_analysis/results/
-modeling_and_accuracy_analysis/results/*html
-modeling_and_accuracy_analysis/results/validate/*html
-modeling_and_accuracy_analysis/notebooks/sandbox
-modeling_and_accuracy_analysis/notebooks/.temporary_altair_data/*.json
-modeling_and_accuracy_analysis/notebooks/.temporary_altair_data/*.csv
-modeling_and_accuracy_analysis/poetry.lock
-.python-version
-dyno_profiles/pvt/20220901 Trial Data/
-modeling_and_accuracy_analysis/notebooks/altair-data-*.json
-modeling_and_accuracy_analysis/notebooks/.temporary_altair_data/*.json
-modeling_and_accuracy_analysis/notebooks/.temporary_altair_data/*.csv
-.devcontainer/
-modeling_and_accuracy_analysis/notebooks/archive
+*.pyc
