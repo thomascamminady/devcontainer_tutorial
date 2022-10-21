@@ -10,15 +10,12 @@ RUN pip install --upgrade pip
 ARG POETRY_VERSION="none"
 RUN if [ "${POETRY_VERSION}" != "none" ]; then su vscode -c "umask 0002 && pip3 install poetry==${POETRY_VERSION}"; fi
 
-ARG NOX_VERSION="none"
-RUN if [ "${NOX_VERSION}" != "none" ]; then su vscode -c "umask 0002 && pip3 install nox-poetry nox==${NOX_VERSION}"; fi
+# ARG NOX_VERSION="none"
+# RUN if [ "${NOX_VERSION}" != "none" ]; then su vscode -c "umask 0002 && pip3 install nox-poetry nox==${NOX_VERSION}"; fi
 
 
-RUN pip install pylance
-RUN pip install duckdb
 RUN pip install pyclean
 RUN pip install pre-commit
 
 COPY .pre-commit-config.yaml .
 RUN git init .
-RUN pre-commit install-hooks

@@ -11,8 +11,8 @@
       // Use -bullseye variants on local on arm64/Apple Silicon.
       "VARIANT": "3.10",
       // Options
-      "POETRY_VERSION": "1.2.2",
-      "NOX_VERSION": "2022.8.7"
+      "POETRY_VERSION": "1.2.2"
+      //"NOX_VERSION": "2022.8.7"
     }
   },
   // Set *default* container specific settings.json values on container create.
@@ -33,7 +33,6 @@
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     "ms-python.python",
-    "ms-python.vscode-pylance",
     "gua.rainbow-brackets",
     "batisteo.vscode-django",
     "dbaeumer.vscode-eslintignore",
@@ -49,8 +48,6 @@
     "littlefoxteam.vscode-python-test-adapter",
     "mechatroner.rainbow-csv",
     "ms-pyright.pyright",
-    "ms-python.python",
-    "ms-python.vscode-pylance",
     "ms-toolsai.jupyter",
     "ms-toolsai.jupyter-keymap",
     "ms-toolsai.jupyter-renderers",
@@ -76,7 +73,9 @@
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "vscode",
   "features": {
-    "github-cli": "latest"
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    }
   },
   "mounts": [
     // Re-use local Git configuration
