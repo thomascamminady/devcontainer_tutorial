@@ -7,4 +7,4 @@ def test_version() -> None:
 
 
 def test_add1() -> None:
-    assert add1(1) == 2
+    assert add1(2) == 3
