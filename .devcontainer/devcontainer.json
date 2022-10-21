@@ -34,7 +34,6 @@
   "extensions": [
     "ms-python.python",
     "gua.rainbow-brackets",
-    "batisteo.vscode-django",
     "dbaeumer.vscode-eslintignore",
     "donjayamanne.python-environment-manager",
     "donjayamanne.python-extension-pack",
@@ -47,7 +46,6 @@
     "KevinRose.vsc-python-indent",
     "littlefoxteam.vscode-python-test-adapter",
     "mechatroner.rainbow-csv",
-    "ms-pyright.pyright",
     "ms-toolsai.jupyter",
     "ms-toolsai.jupyter-keymap",
     "ms-toolsai.jupyter-renderers",
@@ -68,7 +66,6 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Install project dependencies
-  // "postCreateCommand": "poetry install",
   "postCreateCommand": "bash ./.devcontainer/post-install.sh",
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "vscode",
@@ -80,5 +77,7 @@
   "mounts": [
     // Re-use local Git configuration
     "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
+    // mount home
+    //"source=${localEnv:HOME}/,target=/home/vscode/,type=bind,consistency=cached"
   ]
 }

@@ -3,6 +3,7 @@ set -ex
 
 # Common alias
 echo 'alias ltr="ls -ltr"' >> $HOME/.bashrc
+echo 'alias pytestcov="pytest --cov=devcontainer_tutorial tests/"' >> $HOME/.bashrc
 
 # Convenience workspace directory for later use
 WORKSPACE_DIR=$(pwd)
